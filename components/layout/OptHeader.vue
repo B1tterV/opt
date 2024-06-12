@@ -17,10 +17,14 @@
                     <nav class="opt-header__nav">
                         <ul>
                             <li>
-                                <nuxt-link to="/tariffs">Тарифы</nuxt-link>
+                                <nuxt-link to="/tariffs">
+                                    Тарифы
+                                </nuxt-link>
                             </li>
                             <li>
-                                <nuxt-link to="/contacts">Контакты</nuxt-link>
+                                <nuxt-link to="/contacts">
+                                    Контакты
+                                </nuxt-link>
                             </li>
                         </ul>
                     </nav>
@@ -49,9 +53,9 @@
                 :class="{'active': headerContentActive}"
                 @click="headerContentActive = !headerContentActive"
             >
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar" />
+                <span class="bar" />
+                <span class="bar" />
             </div>
         </div>
     </header>

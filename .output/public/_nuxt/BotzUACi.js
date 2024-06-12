@@ -1,1 +1,0 @@
-/* empty css        */import{j as t,G as o,Q as s,R as e}from"./BuhV4YCi.js";const n={class:"login-page"},a=e("section",null,[e("h1",null,"Вход / Регистрация")],-1),c=[a],d=t({__name:"auth",setup(_){return(r,i)=>(o(),s("div",n,c))}});export{d as default};
