@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         lang: 'ru'
       },
       meta: [{
-        name: 'Content-Security-Policy',
+        name: 'content-security-policy',
         content: 'This is my page description.'
       }]
     }
