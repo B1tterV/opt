@@ -1,0 +1,22 @@
+@import '../vendor/colors.scss';
+
+:root.light-theme {
+    // Text colors
+    --text-color: #{$black};
+    --text-reverse: #{$white};
+    --text-link: #{$blue};
+    --text-gray: #{$gray};
+    --text-important: #{$dark-blue};
+
+    // Background colors
+    --background-color: #{$white};
+    --background-reverse: #{$black};
+    --background-gradient: #{$black-to-darkBlue};
+    --background-blue: #{$blue};
+    --background-gray: #{$dark-gray};
+    --background-light-gray: #{$light-gray-two};
+    --background-light-gray-two: #{$light-gray-three};
+    
+    // Additional colors
+    --error-color: #{$red};
+}

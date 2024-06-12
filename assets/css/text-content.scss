@@ -1,0 +1,15 @@
+.default-text{
+    h2{
+        margin-bottom: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        font-size: var(--font-size-xxl);
+        color: #383838;
+    }
+    p{
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 30px;
+        }
+    }
+}

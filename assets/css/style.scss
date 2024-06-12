@@ -1,0 +1,106 @@
+// Vendor
+@import "./vendor/_colors.scss";
+@import "./vendor/_fonts.scss";
+@import "./vendor/_reset.scss";
+@import './themes/_light-theme.scss';
+
+// Themes
+@import "./variables.scss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+* ::-webkit-scrollbar {
+  width: 6px;
+  background: rgb(255, 255, 255);
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: $gray;
+  border-radius: 38px;
+}
+
+html,
+body{
+  background: var(--background-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: normal;
+  color: var(--text-color);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  transition: all 0.2s ease;
+  color: var(--text-reverse);
+  &:hover{
+      color: var(--text-link);
+  }
+}
+
+h1{
+  margin-bottom: 40px;
+  line-height: 120%;
+  font-weight: 700;
+  font-size: var(--font-size-xxl);
+}
+
+footer,
+header,
+section,
+.container {
+    padding: 0 calc(50% - 580px);
+}
+
+.s-title{
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  line-height: 120%;
+}
+
+.vue-notification {
+  border-radius: 5px;
+
+  .notification-title{
+    font-weight: 700;
+    font-size: var(--font-size);
+  }
+  .notification-content{
+    font-weight: 400;
+    font-size: var(--font-size-md);
+  }
+}
+
+@media (max-width: 1360px){
+  footer,
+  header,
+  section,
+  .container {
+    padding: 0 calc(50% - 432px);
+  }
+}
+
+@media (max-width: 920px){
+  footer,
+  header,
+  section,
+  .container{
+    padding: 0 calc(50% - 322px);
+  }
+}
+
+@media (max-width: 720px){
+  footer,
+  header,
+  section,
+  .container{
+    padding: 0 24px;
+  }
+}

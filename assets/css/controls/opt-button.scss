@@ -1,0 +1,61 @@
+.opt-button{
+    cursor: pointer;
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: var(--font-size);
+    transition: all 0.4s ease;
+    background: none;
+    color: var(--text-color);
+    min-width: fit-content;
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.4s ease;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        opacity: 1;
+    }
+    &_min{
+        padding: 9px 18px;
+        font-size: var(--font-size-md);
+    }
+    &_blue{
+        background: var(--background-blue);
+        color: var(--text-reverse);
+        border: 1px solid var(--background-blue);
+        &:hover{
+            background: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--background-blue);
+        }
+        &_border{
+            background: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--background-blue);
+            &:hover{
+                background: var(--background-blue);
+                color: var(--text-reverse);
+            }
+        }
+    }
+}
+
+@media (max-width: 1360px){
+    .opt-button{
+        padding: 8px 16px;
+        &_min{
+            padding: 6px 12px;
+        }
+    }
+}

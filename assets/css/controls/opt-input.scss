@@ -1,0 +1,40 @@
+.opt-input{
+    width: 100%;
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    &__input{
+        margin-top: 5px;
+        font-family: var(--font-family);
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid var(--background-gray);
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: var(--font-size);
+        color: var(--text-color);
+        z-index: 1;
+        background: none;
+        transition: all 0.3s ease;
+        &::placeholder{
+            color: var(--text-additional-color);
+        }
+        &.error{
+            border: 1px solid var(--error-color);
+            &:hover{
+                border: 1px solid var(--error-color);
+            }
+            &:focus{
+                border: 1px solid var(--error-color);
+            }
+        }
+        &:hover{
+            border: 1px solid colorOpacity(--background-reverse, 0.4);
+        }
+        &:focus{
+            border: 1px solid colorOpacity(--background-reverse, 0.6);
+        }
+    }
+}
