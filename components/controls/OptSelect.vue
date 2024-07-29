@@ -124,6 +124,7 @@ onBeforeUnmount(() => {
     transition: all 0.3s ease;
     justify-content: space-between;
     overflow: hidden;
+    white-space: nowrap;
   }
 
   .arrow {
