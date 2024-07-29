@@ -36,5 +36,10 @@
         &:focus{
             border: 1px solid colorOpacity(--background-reverse, 0.6);
         }
+        &.table{
+            margin-top: 0;
+            height: 35px;
+            font-size: 16px;
+        }
     }
 }

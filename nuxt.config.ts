@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   pages: true,
   devtools: { enabled: false },
   modules: [
+    '@pinia/nuxt',
     '@nuxtjs/eslint-module',
     'nuxt-swiper',
     'nuxt3-notifications'

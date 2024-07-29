@@ -75,6 +75,7 @@ const router = useRouter()
     width: 100%;
     height: 60px;
     background: var(--background-gradient);
+    z-index: 1000;
     .content-wrapper{
         display: flex;
         justify-content: space-between;

@@ -1,7 +1,6 @@
 <template>
     <label
         class="opt-input"
-        :class="setStyle"
     >
         {{ label }}
         <input
@@ -11,7 +10,8 @@
                 {'error': error },
                 {'focused': focused },
                 {'active': proxyValue },
-                {'disabled': disabled}
+                {'disabled': disabled},
+                setStyle
             ]"
             :autocomplete="autocomplete"
             :disabled="disabled"
@@ -97,8 +97,8 @@ const onChange = (event: any): void => {
 }
 
 const setStyle = computed(() => {
-  if (props.iForm) { return 'opt-input' + `_${props.iForm}` }
-  return 'opt-input_default'
+  if (props.iForm) { return props.iForm }
+  return 'default'
 })
 
 watch(() => props.modelValue, (newValue) => {
