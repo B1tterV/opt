@@ -1,6 +1,7 @@
 <template>
     <div class="custom-select">
         <div
+            ref="selectionHeader"
             class="custom-select__header"
             @click="toggleDropdown"
         >
@@ -42,6 +43,7 @@ const props = defineProps<{
     modelValue: string | number | null
   }>()
 const emit = defineEmits(['update:modelValue'])
+const selectionHeader = ref<any>(null)
 
 const isOpen = ref(false)
 // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
@@ -65,7 +67,7 @@ const selectOption = (option: Option) => {
 }
 
 const updateDropdownPosition = () => {
-  const rect = document.querySelector('.custom-select__header')?.getBoundingClientRect()
+  const rect = selectionHeader.value?.getBoundingClientRect()
   if (rect) {
     dropdownStyles.value = {
       top: `${rect.bottom + window.scrollY + 10}px`,
